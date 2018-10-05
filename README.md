@@ -10,7 +10,9 @@ Maybe! Batchcraft lets you run most console commands through shell scripts or ot
 ### Cool, how do I get it?
 Batchcraft is written in Go, and should run on most remotely-modern systems. If you wish to build Batchcraft from source, just have a working Go installation, clone this repository, and run `go build` in the directory to get a binary that works for your system.
 
-If you'd rather not compile it from source and you're running either Windows or 64-bit Linux, just grab the pre-compiled binary for your server's operating system from the `bin` directory in this repository.
+If you'd rather not compile it from source and you're running either Windows or Linux, just grab the pre-compiled binary for your server's operating system from the `bin` directory in this repository.
+If your operating system is 32-bit, use the binary located in the `x86` subdirectory. If your operating system is 64-bit, use the binary located in the `x64` subdirectory.
+If you aren't sure what one to use, the 32-bit Windows binary will work on both 32-bit and 64-bit versions of Windows. For Linux, because most installations are 64-bit, try the 64-bit version first and if it doesn't let you run it, try the 32-bit version instead.
 
 ### Okay, I have it, how do I install it and use it?
 Because Batchcraft relies on Minecraft's RCON feature, that will need to be enabled before Batchcraft will function.
