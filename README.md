@@ -14,6 +14,10 @@ If you'd rather not compile it from source and you're running either Windows or 
 If your operating system is 32-bit, use the binary located in the `x86` subdirectory. If your operating system is 64-bit, use the binary located in the `x64` subdirectory.
 If you aren't sure what one to use, the 32-bit Windows binary will work on both 32-bit and 64-bit versions of Windows. For Linux, because most installations are 64-bit, try the 64-bit version first and if it doesn't let you run it, try the 32-bit version instead.
 
+If you're running Batchcraft on a Raspberry Pi or other similar single-board computer, you'll most likely want the binary located in the `linux/arm` subdirectory. At the time of writing, most single-board computers have either a 32-bit or 64-bit ARM processor, but use a 32-bit Linux-based operating system. If you knowingly installed a 64-bit one, use the binary from the `linux/arm64` subdirectory instead.
+
+If you're running Batchcraft on an ARM-based cloud server, such as AWS' EC2 A1, you'll probably want to use the binary located in `linux/arm64`.
+
 ### Okay, I have it, how do I install it and use it?
 Because Batchcraft relies on Minecraft's RCON feature, that will need to be enabled before Batchcraft will function.
 
